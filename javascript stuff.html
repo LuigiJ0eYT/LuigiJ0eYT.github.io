@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+
+
+
+<title>JavaScript stuff</title>
+</head>
+<body style="background-color: orangered;">
+
+<h1> Javascript Testing</h1>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript! (not script)"'>Click Me!</button>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='SEKAI_no_4koma_94.jpg'">leo/need kaito :fearful:</button>
+
+<img id="myImage" src="wxs kaito.png" title="the goober omg look at him go" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='SEKAI_no_4koma_154_en.jpg'">leo/need kaito :celebrate:</button>
+
+
+<p id="sizechange"> Javscript can also adjust font CSS (e.g. font size)</p>
+<button type="button" onclick="document.getElementById('sizechange').style.fontSize = '100px'">Let it grow!</button>
+
+<p id="disappear"> oh boy i love being a line of text on a website</p>
+<button type="button" onclick="document.getElementById('disappear').style.display = 'none'; document.getElementById('disappear').innerHTML = 'oh my god what have you done, you\'re horrible';">hey watch this</button>
+<!only makes text disappear, doesnt bring up the new text>
+
+
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!(script woah)";
+</script>
+<script src="myScript.js"></script>
+
+
+<p id="otherfile">Javascript can happen across multiple documents</p>
+<button type="button" onclick="myScript()">Click me</button>
+
+
+</body>
+</html>
