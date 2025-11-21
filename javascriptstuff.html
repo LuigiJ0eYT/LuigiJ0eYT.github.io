@@ -53,5 +53,47 @@ document.getElementById("demo").innerHTML = "Hello JavaScript!(script woah)";
 <button type="button" onclick="myScript()">Click me</button>
 
 
+<script>
+window.alert("Stuff here definitely will not all work so bare with lol");
+</script>
+
+
+<button type="button" onclick="buttonAlert()"> Click this!</button>
+
+<script src="buttonAlert.js"></script>
+
+<button id="testinput" type="button" onclick="popupinput()"> Test pop up</button>
+
+<script>
+function popupinput() {
+	const result = window.prompt("Enter something:", "default text");
+	if (result === null) {
+		// user cancelled
+		window.alert('Prompt cancelled');
+	} else {
+		window.alert('You entered: ' + result);
+	}
+}
+
+</script>
+
+<div id="app">
+		{{message}}
+</div>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+	const app = Vue.createApp({
+		data() {
+			return {
+				message: "Hello Vue!"
+			}
+		}
+	})
+	
+	app.mount('#app')
+</script>
+
+
 </body>
 </html>
