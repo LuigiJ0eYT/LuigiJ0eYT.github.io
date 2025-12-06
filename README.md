@@ -1,4 +1,7 @@
-# V1.01
+## V1.02
+- bug fix when moving between pages (i forgot to change the name of index in the nav bar)
+
+## V1.01
 - changed up directory structure a bit so almost every page has slight changes internally
 
 
