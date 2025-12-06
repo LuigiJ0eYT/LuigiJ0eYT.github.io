@@ -1,3 +1,7 @@
+# V1.01
+- changed up directory structure a bit so almost every page has slight changes internally
+
+
 # V1.0 of main site
 Page *should* now have a proper landing page to lead off to my other projects
 Now separate sections for:
