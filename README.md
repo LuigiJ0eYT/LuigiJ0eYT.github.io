@@ -1,3 +1,6 @@
+## V1.03
+- added japan project for future additions
+
 ## V1.02
 - bug fix when moving between pages (i forgot to change the name of index in the nav bar)
 
@@ -13,3 +16,4 @@ Now separate sections for:
 - Contact Info (unfinished)
 - Links to social media / other pages (unfinished)
 - Quick links to sites I use (unfinished)
+
