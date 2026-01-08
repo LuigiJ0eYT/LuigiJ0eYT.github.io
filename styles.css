@@ -1,10 +1,18 @@
 html {
     background-color: #c3c3c3;
 }
+/* 
+html, body { height: 100%; margin: 0; }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content { width: 90%; max-width: 900px; } */
 
 .navcontainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 60px;
 }
@@ -26,12 +34,19 @@ html {
     background-color: #fff;
     border: 2px solid #008700;
     border-radius: 12px;
+    max-width: 900px;
+    width: 90%;
+    margin: 20px auto; /*centers horizontally*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
 }
 
 .content ul {
     list-style-type: none;
     padding: 0;
     font-size: large;
+
 }
 
 .content a {
@@ -53,5 +68,38 @@ html {
     .content {
         background-color: #2e2e2e;
         border: 2px solid #00bb00;
+    }
+}
+
+/* Mobile View (this has been a pain) */
+@media screen and (max-width:860px) {
+    .navcontainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 15px;
+        display: none
+    }
+    .navbutton {
+        flex-direction: column;
+        margin-bottom: 15px;
+    } 
+
+    #hamburgerbutton{
+        display: block;
+    }
+
+    /* show links when JS toggles the menu open on small screens definitely not done with ai nopesireee*/
+    .navcontainer #links.open {
+        display: flex;
+    }
+}
+/* PC view */
+@media screen and (min-width:861px) {
+    #hamburgerbutton{
+        display: none;
+    }
+    .navcontainer #links {
+        display: flex;
     }
 }
