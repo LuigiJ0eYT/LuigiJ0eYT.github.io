@@ -28,6 +28,26 @@ body {
     font-size: 40px;
 }
 
+#hamburgerbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 8px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#hamburgerbutton img {
+    width: 36px;
+    height: auto;
+    display: block;
+}
+
+.hamburger {
+    height:128px;
+    width:auto;
+}
+
 .content {
     text-align: center;
     justify-content: center;
@@ -86,11 +106,15 @@ body {
     } 
 
     #hamburgerbutton{
-        display: block;
+        display: flex;
+        justify-self: center;
+        width: 128px;
+        height: auto;
+
     }
 
-    /* show links when JS toggles the menu open on small screens definitely not done with ai nopesireee*/
-    .navcontainer #links.open {
+    /* show links when JS toggles the menu open on small screens */
+    .navcontainer.open {
         display: flex;
     }
 }
@@ -99,7 +123,7 @@ body {
     #hamburgerbutton{
         display: none;
     }
-    .navcontainer #links {
+    .navcontainer {
         display: flex;
     }
 }
