@@ -1,3 +1,8 @@
+## V1.04
+Small bug fixes and better mobile support
+- added a hamburger menu when displaying site on smaller devices/phones
+- fixed images not loading on javascriptstuff
+
 ## V1.03
 - added japan project for future additions
 
@@ -16,4 +21,5 @@ Now separate sections for:
 - Contact Info (unfinished)
 - Links to social media / other pages (unfinished)
 - Quick links to sites I use (unfinished)
+
 
