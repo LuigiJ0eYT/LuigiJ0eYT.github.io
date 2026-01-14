@@ -1,3 +1,14 @@
 * {
     color: red;
 }
+.navcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+h1 {
+    text-decoration:underline;
+
+}
