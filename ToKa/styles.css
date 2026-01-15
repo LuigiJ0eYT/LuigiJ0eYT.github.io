@@ -1,0 +1,449 @@
+/* Universal stuff */
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Luckiest+Guy&display=swap');
+* {
+    font-family: Luckiest Guy, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+
+/* Nav Bar stuff (theres a lot) */
+.icon {
+    width: 400%;
+    height: auto;
+    text-align: center;
+
+}
+.navcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1a6b22;
+    height: 80px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+#links {
+    display: flex;
+    flex-direction: row;;
+}
+.navbutton {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Luckiest Guy, sans-serif;
+    border: 3px solid #33ff47;
+    border-radius: 25px;
+    background-color: #33ff47;
+    width: 5%;
+    margin: 0px 10px;
+    justify-content: center;
+    padding: 8px;
+    min-width: 90px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-align: center;
+    flex-direction: row;
+}
+.navicon {
+    height: 40px;
+}
+.logo {
+    height: 55px;
+    margin: 0px 20px;
+
+}
+#hamburgerbutton{
+    display: none;
+}
+.words {
+  display: flex;
+}
+
+/* Hero Image/Text */
+.heroimagestuff {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroimagestuff img {
+    z-index: -1;
+}
+.heroimagehome {
+    height: 50.76vw;
+    justify-self: center;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+.heroimageadvice {
+    height: 44.76vw;
+    justify-self: center;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+.heroimagetraining {
+    height: auto;
+    width: 100%;
+    justify-self: center;
+    max-width: 100%;
+    padding-bottom: 10px;
+}
+.herotext {
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Londrina Shadow', sans-serif;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+
+}
+.herotext h1 {
+    font-family: 'Londrina Shadow', sans-serif;
+    font-weight: light;
+}
+.herotext button {
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 5px solid #4d654f;
+    border-radius: 25px;
+    background-color: #4d654f;
+    color: #fefefe;
+    font-size: 100%;
+    font-family: 'Londrina Shadow', sans-serif;
+}
+.pricing-herotext {
+    background-color: none;
+    justify-self: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color:white;
+    text-shadow:
+        -1px -1px 0 black, /* Top-left shadow */
+         1px  1px 0 black, /* Top-right shadow */
+        -1px -1px 0 black, /* Bottom-left shadow */
+         1px  1px 0 black; /* Bottom-right shadow */
+    font-size: 130%;
+}
+
+/* Content on pages */
+.container {
+    display: flex;
+    justify-content: space-around; /* this adds the space between the items, thanks phillip */
+}
+.content {
+    background-color: #4d654f;
+    border: #4d654f;
+    border-radius: 30px;
+    display: block;
+    max-width: 20%;
+    height: fit-content;
+    min-height: 25vw;
+}
+
+.content li {
+    color: #fefefe;
+    font-family: Geologica, sans-serif;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content ul {
+    list-style-type: disc !important;
+    list-style-position: inside; /* mfw random css code that i didnt know existed fixes my entire problem (i hate css) */
+    padding-left: 12px;
+}
+h3 {
+    color: #fefefe;
+    font-family: Luckiest Guy, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+p {
+    color: #fefefe;
+    font-family: Geologica, sans-serif;
+    font-size: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.CTA {
+    margin-left: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+
+}
+.adviceCTA {
+    margin-left: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+    font-family: Geologica, sans-serif;
+    font-weight: bold;
+}
+
+.footcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #4d654f;
+    font-family: Geologica, sans-serif;
+    margin-top: 20px;
+}
+.footcontainer h4 {
+    font-family: Geologica, sans-serif;
+    color: #fefefe;
+    font-weight: light;
+}
+
+@media (max-width:600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content {
+        max-width: 80%;
+        margin-bottom: 20px;
+
+    }
+}
+/*@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+    .navcontainer {
+        background-color: #333333;
+    }
+    .navbutton {
+        background-color: #555555;
+        border-color: #777777;
+        color: #e0e0e0;
+    }
+}*/
+
+/* Settings */
+li {
+    list-style: none;
+    width: 130px;
+}
+#settings {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.setting-sidebar {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    background-color: #d9d9d9;
+    width: 130px;
+}
+
+/* Log in page */
+.logincontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.log-in-logo img{
+    height: 200px;
+    width: 200px;
+}
+
+.actualloginstuff {
+    background-color: #fefefe;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #d9d9d9;
+    min-height: max-content; /*make background stretch all the way down*/
+}
+
+#forgotpassword {
+    cursor: pointer;
+    font-family: Geologica, sans-serif;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* Social Page */
+#socialheader {
+    font-family: 'Londrina Shadow', sans-serif;
+    background-color: none;
+    padding-top: 30px;
+    padding-left: 25px;
+    color:black;
+    font-weight: 500;
+    font-size: 300%;
+}
+
+.socialsearch {
+    min-width: 90%;
+    padding-left: 25px;
+    padding-bottom: 45px;
+}
+
+.socialsearch input {
+    width: 100%;
+    background-color: #d9d9d9;
+    min-height: 40px;
+}
+
+#friendscontainer div {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+}
+
+#friends-list {
+    justify-self: center;
+    font-family: Londrina Shadow, sans-serif;
+    font-weight: 500;
+}
+
+#actual-list {
+    padding-left: 15px;
+    align-items: center;
+    height: 50%;
+}
+/* #d9d9d9 */
+
+/* Profile Page */
+.profilebanner {
+    min-width: 90%;
+    margin-left: 25px;
+    margin-right: 45px;
+    background-color: #d9d9d9;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilebanner div {
+    display: flex;
+    align-items: center;
+}
+
+.profilebanner img {
+    height: 128px;
+    width: 128px;
+    margin-top: 25px;
+    margin-left: 25px;
+    position: relative;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.profilename {
+    color: #000;
+    font-size: 25px;
+    padding-top: 45px;
+}
+
+.editprofile {
+    float: right;
+    color: #000;
+    font-size: 25px;
+    padding-top: 45px;
+}
+
+.useractivity {
+    background-color: #d9d9d9;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 400px;
+}
+
+.usertext {
+    font-family: Geologica, sans-serif;
+    color: #000;
+    padding-left: 15px;
+}
+
+
+/* Mobile View (this has been a pain) */
+@media screen and (max-width:860px) {
+    .navcontainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .navbutton {
+        flex-direction: column;
+        margin-bottom: 15px;
+    } 
+
+    .heroimagehome, .heroimageadvice, .heroimagetraining {
+        height: auto;
+        width: 100%;
+    }
+    .heroimagestuff img {
+        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .herotext {
+        position: static;
+        transform: none;
+        top: auto;
+        left: auto;
+        margin: 1rem auto;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 0.5rem 1rem;
+        color: white;
+        text-align: center;
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+
+    .logo {
+        height: 60px;
+    }
+    #hamburgerbutton{
+        display: block;
+    }
+    
+    .navcontainer #links {
+        display: none
+    }
+
+    #links {
+        flex-direction: column;
+    }
+    /* show links when JS toggles the menu open on small screens definitely not done with ai nopesireee*/
+    .navcontainer #links.open {
+        display: flex;
+    }
+}
+/* PC view */
+@media screen and (min-width:861px) {
+    #hamburgerbutton{
+        display: none;
+    }
+    .navcontainer #links {
+        display: flex;
+    }
+}
+/* ok this all works im just not touching it again */

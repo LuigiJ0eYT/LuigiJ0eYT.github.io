@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Log In / Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<header>
+    <div class="logincontainer">
+        <a href="../Home/HomePage.html" title="Logo" class="log-in-logo"><img src="../assets/Logo.png" class="logo"></a>
+    </div>
+    <div id="loginbackground">
+        <div class="actualloginstuff">
+            <h2>Log In</h2>
+            <form>
+                <label for="usrnme">Username:</label><br>
+                <input type="text" name="Username" v-model="username"><br>
+                <label for="psswrd">Password:</label><br>
+                <input type="password" name="Password" v-model="password"><br>
+                <h4 id="forgotpassword">Forgot Password?</h4>
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+    </div>
+
+
+<script>
+    document.getElementById("forgotpassword").onclick = function() {
+        alert("lol imagine")
+    };
+</script>
+</header>

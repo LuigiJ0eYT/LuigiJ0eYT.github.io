@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ToKa Fitness</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<link rel="stylesheet" href="../styles.css" />
+</head>
+
+<body>
+<header>
+    <div id="app" class="navcontainer">
+        <a href="../Home/HomePage.html" title="Logo" class="navbutton"><img src="../assets/Logo.png" class="logo"></a>
+        <div id="links">
+            <a href="../Home/HomePage.html" title="Home" class="navbutton"><span class="words">Home</span></a>
+            <a href="../Advice/Advice.html"title="Advice" class="navbutton"><span class="words">Advice</span></a>
+            <a href="../Pricing/Pricing.html"title="Pricing" class="navbutton"><span class="words">Pricing</span></a>
+            <a href="../Training/Training.html" title="Training" class="navbutton"><span class="words">Training</span></a>
+            <a href="../Social/Social.html" title="Social" class="navbutton"> <img src="../assets/users.svg" class="navicon"></a>
+            <a v-show="signedin" href="../Profile/Profile.html" title="Profile" class="navbutton"> <img src="../assets/circle-user.svg" class="navicon"></a>
+            <a v-show="!signedin" href="../LogInSignUp/LogInSignUp.html" title="Log In" class="navbutton"> <img src="../assets/login.svg" class="navicon"></a>
+            <a href="../Settings/Account.html" title="Settings" class="navbutton"> <img src="../assets/settings.svg" class="navicon"></a>
+        </div>
+            <a href="javascript:void(0);" class="navbutton" onclick="togglemenu()" id="hamburgerbutton"><img src="../assets/menu-burger.svg" class="navicon"></a>
+    </div>
+</header>
+
+<div class="heroimagestuff">
+    <img src="HeroImage.jpg" class="heroimagehome">
+</div>
+  <div class="herotext">
+    <h1>Fitness for you.</h1>
+    <button>Join now</button>
+  </div>
+
+  
+<div class="container">
+    <div class="content">
+        <h3>Personal Training Sessions</h3>
+        <p>Book a personal training sessions with our certified official trainers to use our state-of-the-art facilities to train yourself to be the best person you want to be. </p>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <div class="content">
+        <h3>Healthy Living</h3>
+        <p>We offer the most up-to-date information on how to eat healthy and take care of yourself as best you can.</p>
+    </div>
+
+    <div class="content">
+        <h3>Premium content</h3>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    console.log('Script is running');
+    console.log('Vue object:', typeof Vue);
+    
+    Vue.createApp({
+        data() {
+            return {
+                signedin: false,
+                username: 'test',
+                password: '',
+            }
+        },
+        created() {
+            console.log('Vue app created, signedin:', this.signedin);
+        }
+    }).mount('#app')
+    </script>
+<script src="../hamburger.js"></script>
+
+<footer>
+    <div class="footcontainer">
+        <div class="footcontent">
+            <h4>Other ToKa Fitness services</h4>
+        </div>
+        <div class="footcontent">
+            <h4>Address</h4>
+            <h4>123 Fitness St.<br>Fit City, FC1 2AB</h4>
+        </div>
+        <div class="footcontent">
+            <h4>Blog</h4>
+            <h4>News</h4>
+            <h4>Social Media Links</h4>
+            <h4>Twitter/X</h4>
+            <h4>Linkedin</h4>
+            <h4>Instagram</h4>
+        </div>
+    </div>
+</footer>
+</body>
