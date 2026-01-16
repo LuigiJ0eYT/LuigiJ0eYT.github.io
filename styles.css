@@ -23,7 +23,7 @@ body {
     justify-content: center;
     border: 2px solid #007800;
     border-radius: 12px;
-    color: #0000AA;
+    color: #0000DD;
     margin: 0 10px;
     font-size: 40px;
 }
@@ -70,7 +70,7 @@ body {
 }
 
 .content a {
-    color: #0D0;
+    color: #0b0;
 }
 
 #ToKa {
@@ -90,6 +90,12 @@ body {
     .content {
         background-color: #2e2e2e;
         border: 2px solid #00bb00;
+    }
+    .content a {
+    color: #0D0;
+    }
+    .navbutton {
+        color: #00a
     }
 }
 
