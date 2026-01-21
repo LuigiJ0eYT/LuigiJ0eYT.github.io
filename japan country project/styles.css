@@ -195,3 +195,121 @@ img {
         padding: 20px;
     }
 }
+
+/* Layout for culture page */
+.page-container {
+    max-width: 1200px;
+    margin: 20px auto 60px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.toc {
+    position: sticky;
+    top: 90px;
+    align-self: start;
+    background: linear-gradient(180deg, var(--white), #fbfbfb);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.toc h2 {
+    font-size: 1.1rem;
+    color: var(--dark-gray);
+    margin-bottom: 10px;
+}
+
+.toc ul {
+    list-style: none;
+}
+
+.toc li {
+    margin: 8px 0;
+}
+
+.toc a {
+    color: var(--dark-gray);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.toc a:hover {
+    color: var(--primary-red);
+}
+
+.content section {
+    margin: 0 0 24px 0;
+}
+
+@media (max-width: 900px) {
+    .page-container {
+        grid-template-columns: 1fr;
+    }
+
+    .toc {
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Homepage hero and cards */
+.hero {
+    background: linear-gradient(135deg, rgba(188,0,45,0.06), rgba(212,175,55,0.03));
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.hero .hero-text {
+    flex: 1;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    margin-bottom: 0;
+    font-size: 1.05rem;
+}
+
+.hero .hero-image {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.card {
+    background: var(--white);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.card img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    .hero { flex-direction: column; text-align: center; }
+    .hero .hero-image { width: 160px; }
+}
