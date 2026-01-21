@@ -17,3 +17,5 @@ window.addEventListener('resize', function () {
     }
 });
 // ok this all works im just not touching it
+
+// I agree joe good mentality 
