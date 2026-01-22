@@ -84,6 +84,17 @@ h3 {
     font-weight: 600;
 }
 
+
+h4 {
+    color: var(--primary-red);
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid var(--accent-gold);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
 p {
     color: var(--dark-gray);
     margin-bottom: 15px;
@@ -106,20 +117,21 @@ p {
     justify-content: center;
     background: linear-gradient(135deg, rgba(188, 0, 45, 0.05) 0%, rgba(212, 175, 55, 0.05) 100%);
     padding: 40px 20px;
-    gap: 25px;
+    gap: 35px;
 }
 
 .Flag_Text_box {
-    height: 80px;
+    height: 160px;
     width: 90%;
     max-width: 1200px;
     background: linear-gradient(135deg, var(--white) 0%, #fafafa 100%);
     border: none;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 10px;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding-top: 10px;
     
 }
 
@@ -127,6 +139,26 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
+
+.Flag_paragraph_box{
+    height: 475px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 30px;
+    border: none;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(135deg, var(--white) 0%, #fafafa 100%);
+}
+
+.Flag_paragraph_box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+
 
 main {
     max-width: 1200px;
@@ -321,4 +353,10 @@ img {
 @media (max-width: 700px) {
     .hero { flex-direction: column; text-align: center; }
     .hero .hero-image { width: 160px; }
+}
+
+li{
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    font-size: 16px;
 }
