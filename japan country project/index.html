@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Slot Game</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="../japan country project/images/japan.png">
+</head>
+<body class="jp-theme">
+  <main class="container">
+    <header>
+      <div class="header-left">
+        <h1>Lucky Reels <span class="jp">ラッキーリール</span></h1>
+        <p class="subtitle">A small simulated gambling game — play for fun only.</p>
+      </div>
+      <div class="header-actions">
+        <a class="nav-button" href="homepage.html" id="newPageBtn">Go to home page</a>
+      </div>
+    </header>
+    
+
+    <section class="game">
+      <div class="panel">
+        <div class="credits">Credits: <span id="credits">100</span></div>
+        <div class="controls">
+          <label>Bet:
+            <select id="bet">
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="25">25</option>
+              <option value="50">50</option>
+              <option value="100">100</option>
+              <option value="500">500</option>
+              <option value="1000">1000</option>
+              <option value="5000">5000</option>
+            </select>
+          </label>
+          <label class="custom-bet">Or custom:
+            <input id="customBet" type="number" min="1" placeholder="Custom" />
+          </label>
+          <button id="allIn">All In</button>
+          <button id="spin">Spin</button>
+          
+        </div>
+      </div>
+
+      <div class="machine">
+        <div class="reels" id="reels">
+          <div class="reel" id="r0"></div>
+          <div class="reel" id="r1"></div>
+          <div class="reel" id="r2"></div>
+        </div>
+        <div class="machine-base"></div>
+      </div>
+
+      <aside class="leaderboard" id="leaderboard">
+        <div class="message" id="message">Good luck!</div>
+        <h2>Leaderboard</h2>
+        <div class="lb-controls">
+          <input id="playerName" placeholder="Your name" maxlength="20" />
+          <button id="saveScore">Save Score</button>
+        </div>
+        <ol id="lbList" class="lb-list"></ol>
+        <div class="lb-actions">
+          <button id="exportLb">Export</button>
+          <button id="importLbBtn">Import</button>
+        </div>
+        <textarea id="importLb" class="import-area" placeholder="Paste leaderboard JSON here"></textarea>
+      </aside>
+
+      
+    </section>
+
+    <div id="confetti-root" class="confetti-root" aria-hidden="true"></div>
+    <div id="sakura-root" class="sakura-root" aria-hidden="true"></div>
+
+    <footer>
+      <small>For entertainment only. No real money involved.</small>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
