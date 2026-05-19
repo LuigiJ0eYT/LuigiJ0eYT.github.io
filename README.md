@@ -9,7 +9,7 @@ This is a simple personal website that will display my works and other informati
 
 ## How to run
 
-1. Go to [this link](https://luigij0eyt.github.io/)
+1. Go to [this link](https://luigij0eyt.github.io/Personal-Website/)
 2. Profit
 
 ## Future developments
